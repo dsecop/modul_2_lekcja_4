@@ -56,6 +56,37 @@
             Console.WriteLine(a);
             Console.WriteLine(b);
             Console.WriteLine(c);
+
+            // Task 5
+            Console.WriteLine("Please complete user data.");
+            Console.Write("User first name: ");
+            string firstname = Console.ReadLine();
+
+            Console.Write("User last name: ");
+            string lastname = Console.ReadLine();
+
+            Console.Write("User phone number: ");
+            string phonenumber = Console.ReadLine();
+             
+            Console.Write("User email address: ");
+            string email = Console.ReadLine(); 
+
+            Console.Write("User height (cm): ");
+            double height = double.Parse(Console.ReadLine()); 
+
+            Console.Write("User weight (kg): ");
+            double weight = double.Parse(Console.ReadLine()); 
+
+            Console.Write("User age: ");
+            int age = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine($"{firstname} {lastname}");
+            Console.WriteLine($"Phone number: {phonenumber}");
+            Console.WriteLine($"Email: {email}");
+            Console.WriteLine($"Height: {height} cm");
+            Console.WriteLine($"Height: {weight} kg");
+            Console.WriteLine($"Age: {age}");
         }
     }
 }
