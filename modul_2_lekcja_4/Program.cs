@@ -45,6 +45,17 @@
                 return Math.Sqrt(width + length);
             }
             Console.WriteLine(calculate_diagonal_length());
+
+            // Task 4
+            int a;
+            string b;
+            double c;
+            a = 10;
+            b = "Szkoła Dotneta";
+            c = 12.5;
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+            Console.WriteLine(c);
         }
     }
 }
