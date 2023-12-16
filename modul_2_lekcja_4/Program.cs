@@ -24,10 +24,27 @@
 
             char[] letters = [a, b, c];
 
-            foreach( char letter in letters.Reverse())
+            foreach (char letter in letters.Reverse())
             {
                 Console.WriteLine(letter);
             }
+
+            // Task 3
+            static double calculate_diagonal_length(double width = 0, double length = 0)
+            {
+                int power = 2;
+
+                Console.WriteLine("Type the width of the rectangle's sides:");
+                width = double.Parse(Console.ReadLine());
+                width = Math.Pow(width, power);
+
+                Console.WriteLine("Type the length of the rectangle's sides:");
+                length = double.Parse(Console.ReadLine());
+                length = Math.Pow(length, power);
+
+                return Math.Sqrt(width + length);
+            }
+            Console.WriteLine(calculate_diagonal_length());
         }
     }
 }
