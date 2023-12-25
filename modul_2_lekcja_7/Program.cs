@@ -64,17 +64,17 @@
             Console.Write("Please, type how old are you?: ");
             int age = int.Parse(Console.ReadLine());
 
-            if (age >= 21 && age < 30)
+            if (age >= 21)
             {
                 Console.WriteLine("You can become an member of parliament or even prime minister");
-            }
-            else if (age >= 30 && age < 35)
-            {
-                Console.WriteLine("You can become a senator");
-            }
-            else if (age >= 35)
-            {
-                Console.WriteLine("You can become president");
+                if (age >= 30)
+                {
+                    Console.WriteLine("You can become a senator");
+                    if (age >= 35)
+                    {
+                        Console.WriteLine("You can become president");
+                    }
+                }
             }
             else
             {
@@ -292,7 +292,14 @@
                     Console.WriteLine($"Your result is {firstnumber * secondnumber}");
                     break;
                 case 4:
-                    Console.WriteLine($"Your result is {firstnumber / secondnumber}");
+                    if (firstnumber == 0 || secondnumber == 0)
+                    {
+                        Console.WriteLine("Cannot divide by zero!!!");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Your result is {firstnumber / secondnumber}");
+                    }
                     break;
             }
         }
